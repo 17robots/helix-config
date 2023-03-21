@@ -1,0 +1,94 @@
+use-grammars = { except = [
+    "bass",
+    "beancount",
+    "bicep",
+    "cairo",
+    "cpon",
+    "cue",
+    "d",
+    "dart",
+    "dot",
+    "edoc",
+    "eex",
+    "ejs",
+    "elm",
+    "elvish",
+    "erb",
+    "esdl",
+    "fish",
+    "fortran",
+    "gdscript",
+    "gleam",
+    "glsl",
+    "heex",
+    "idris",
+    "iex",
+    "julia",
+    "kdl",
+    "kotlin",
+    "latex",
+    "lean",
+    "ledger",
+    "meson",
+    "mint",
+    "nickel",
+    "odin",
+    "openscad",
+    "org",
+    "pascal",
+    "perl",
+    "php",
+    "r",
+    "racket",
+    "rescript",
+    "ron",
+    "ruby",
+    "scala",
+    "scheme",
+    "starlark",
+    "swift",
+    "vala",
+    "vhs",
+    "wast",
+    "wat",
+    "wgsl",
+    "wit",
+    "xit",
+    
+  ]}
+
+[[language]]
+name = "python"
+indent = { tab-width = 2, unit = " " }
+roots = ["pyproject.toml"]
+language-server = { command = "pyright-langserver", args=["--stdio"] }
+formatter = { command = "black", args = ["--quiet", "-"] }
+config = {}
+
+[[language]]
+name = "typescript"
+indent = { tab-width = 2, unit = " " }
+
+[[language]]
+name = "javascript"
+indent = { tab-width = 2, unit = " " }
+
+[[language]]
+name = "tsx"
+indent = { tab-width = 2, unit = " " }
+
+[[language]]
+name = "jsx"
+indent = { tab-width = 2, unit = " " }
+
+[[language]]
+name = "json"
+indent = { tab-width = 2, unit = " " }
+
+[[language]]
+name = "cpp"
+indent = { tab-width = 2, unit = " " }
+
+[[language]]
+name = "c"
+indent = { tab-width = 2, unit = " " }

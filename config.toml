@@ -10,3 +10,6 @@ display-messages = true
 left = ["mode", "spinner"]
 center = ["file-name", "selections"]
 right = ["diagnostics", "position"]
+
+[editor.whitespace]
+render = "all"

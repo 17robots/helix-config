@@ -2,14 +2,31 @@ theme = "base16_transparent"
 
 [editor]
 line-number = "relative"
+mouse = false
+shell = ["pwsh", "-c"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
 
 [editor.lsp]
+display-inlay-hints = true
 display-messages = true
 
 [editor.statusline]
-left = ["mode", "spinner"]
-center = ["file-name", "selections"]
-right = ["diagnostics", "position"]
+left = ["mode"]
+center = ["file-name"]
+right = ["version-control"]
+mode.normal = ""
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
-[editor.whitespace]
-render = "all"
+[keys.normal.space]
+"o" = ":format"
+
+[keys.normal.y]
+"y" = ["extend_to_line_bounds","yank","collapse_selection"]
